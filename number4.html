@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='UTF-8'>
+     <title>project euler</title>
+</head>
+<body>
+
+<div><h1>문제 4</h1></div>
+<div><p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.</p>
+        <p></p>
+        <p>Find the largest palindrome made from the product of two 3-digit numbers.</p></div>
+
+<div>계산 결과 : Console log에 표시</div>
+<div>mac의 경우 : command + option + i</div>
+<div>windows의 경우 : f12</div>
+<div id='main'></div>
+
+
+<script>
+    function palindrome(n1, n2) {
+        var pn1, pn2, max, min;
+        pn1 = Math.pow(10, n1)-1;
+        pn2 = Math.pow(10, n2)-1;
+
+        max = pn1 * pn2;
+        min = Math.pow(10, n1-1) * Math.pow(10, n2-1)
+
+        var result = function (pn1, pn2) {
+            String(pn1).length
+
+            return pn1 * pn2;
+        }
+        
+
+        return [pn1, pn2, max, min, result(pn1,pn2)]
+    }
+
+
+    // var x, y, z, a, b, c, sum;
+    // (x*100+y*10+z)*(a*100+b*10+c)
+
+    console.log(palindrome(3,3))
+</script>
+</body>
+</html>

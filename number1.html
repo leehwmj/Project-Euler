@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div><h1>문제 1</h1></div>
+<div><p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+<p></p>
+    <p>Find the sum of all the multiples of 3 or 5 below 1000.</p></div>
+
+<div>계산 결과 : Console log에 표시</div>
+<div>mac의 경우 : command + option + i</div>
+<div>windows의 경우 : f12</div>
+<div id="main"></div>
+
+
+<script>
+
+    var x = 0;
+
+    for(var i = 1; i<1000; i++){
+        if(i%3 === 0 || i%5 === 0){
+            x = x+i
+        }
+    }
+    console.log(x)
+
+</script>
+</body>
+</html>
