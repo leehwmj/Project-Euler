@@ -9,12 +9,12 @@
 그러면 1부터 100까지 자연수에 대해 "합의 제곱"과 "제곱의 합"의 차이는 얼마입니까? */
 
 var sumSquar = 0,
- squarSum = 0;
+  squarSum = 0
 
-for (var i = 1; i <= 100; i++){
-    sumSquar += i;
-    squarSum += i*i;
+for (var i = 1; i <= 100; i++) {
+  sumSquar += i
+  squarSum += i * i
 }
 
-//console.log(sumSquar*sumSquar, squarSum)
-console.log((sumSquar*sumSquar) - squarSum)
+// console.log(sumSquar*sumSquar, squarSum)
+console.log((sumSquar * sumSquar) - squarSum)
