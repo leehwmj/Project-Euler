@@ -4,119 +4,119 @@
 이백만(2,000,000) 이하 소수의 합은 얼마입니까?
 */
 
-let sum = 0;
-let sum2 = 0;
-let sum3 = 0;
-let sum4 = 0;
-let sum5 = 0;
-let sum6 = 0;
-let sum7 = 0;
-let sum8 = 0;
-let sum9 = 0;
-let sum10 = 0;
+var sum = 0
+var sum2 = 0
+var sum3 = 0
+var sum4 = 0
+var sum5 = 0
+var sum6 = 0
+var sum7 = 0
+var sum8 = 0
+var sum9 = 0
+var sum10 = 0
 
-for (let i = 2; i <= 200000; i++) {
+for (var i = 2; i <= 200000; i++) {
   if (isPrime(i)) {
-    sum = sum + i;
+    sum = sum + i
     // console.log(i)
   }
 }
 
-console.log(sum);
+console.log(sum)
 
-for (let j = 200000; j <= 400000; j++) {
+for (var j = 200000; j <= 400000; j++) {
   if (isPrime(j)) {
-    sum2 = sum2 + j;
+    sum2 = sum2 + j
     // console.log(i)
   }
 }
 
-console.log(sum2);
+console.log(sum2)
 
-for (let k = 400000; k <= 600000; k++) {
+for (var k = 400000; k <= 600000; k++) {
   if (isPrime(k)) {
-    sum3 = sum3 + k;
+    sum3 = sum3 + k
     // console.log(i)
   }
 }
 
-console.log(sum3);
+console.log(sum3)
 
-for (let l = 600000; l <= 800000; l++) {
+for (var l = 600000; l <= 800000; l++) {
   if (isPrime(l)) {
-    sum4 = sum4 + l;
+    sum4 = sum4 + l
     // console.log(i)
   }
 }
 
-console.log(sum4);
+console.log(sum4)
 
-for (let m = 800000; m <= 1000000; m++) {
+for (var m = 800000; m <= 1000000; m++) {
   if (isPrime(m)) {
-    sum5 = sum5 + m;
+    sum5 = sum5 + m
     // console.log(i)
   }
 }
 
-console.log(sum5);
+console.log(sum5)
 
-for (let n = 1000000; n <= 1200000; n++) {
+for (var n = 1000000; n <= 1200000; n++) {
   if (isPrime(n)) {
-    sum6 = sum6 + n;
+    sum6 = sum6 + n
     // console.log(i)
   }
 }
 
-console.log(sum6);
+console.log(sum6)
 
-for (let o = 1200000; o <= 1400000; o++) {
+for (var o = 1200000; o <= 1400000; o++) {
   if (isPrime(o)) {
-    sum7 = sum7 + o;
+    sum7 = sum7 + o
     // console.log(i)
   }
 }
 
-console.log(sum7);
+console.log(sum7)
 
-for (let p = 1400000; p <= 1600000; p++) {
+for (var p = 1400000; p <= 1600000; p++) {
   if (isPrime(p)) {
-    sum8 = sum8 + p;
+    sum8 = sum8 + p
     // console.log(i)
   }
 }
 
-console.log(sum8);
+console.log(sum8)
 
-for (let q = 1600000; q <= 1800000; q++) {
+for (var q = 1600000; q <= 1800000; q++) {
   if (isPrime(q)) {
-    sum9 = sum9 + q;
+    sum9 = sum9 + q
     // console.log(i)
   }
 }
 
-console.log(sum9);
+console.log(sum9)
 
-for (let r = 1800000; r <= 2000000; r++) {
+for (var r = 1800000; r <= 2000000; r++) {
   if (isPrime(r)) {
-    sum10 = sum10 + r;
+    sum10 = sum10 + r
     // console.log(i)
   }
 }
 
-console.log(sum10);
+console.log(sum10)
 
-console.log(sum + sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9 + sum10);
+console.log(sum + sum2 + sum3 + sum4 + sum5 + sum6 + sum7 + sum8 + sum9 + sum10)
 
-function isPrime(number) {
+function isPrime (number) {
   if (number === 2 || number === 1) {
-    return true;
+    return true
   } else {
-    for (let i = 2; i < number; i++) {
+    for (var i = 2; i < number; i++) {
       if (number % i === 0) {
-        return false;
+        return false
       }
     }
-    return true;
+    return true
   }
 }
 
